@@ -1,0 +1,5 @@
+g++ src/CPU.cpp -c -o src/CPU.o -Iinclude -Wall -g
+g++ src/Graphics.cpp -c -o src/Graphics.o -Iinclude -Wall -g
+g++ src/octochip8.cpp -c -o src/octochip8.o -Iinclude -Wall -g
+g++ src/CPU.o src/Graphics.o src/octochip8.o -o octochip8 -Wall -g
+#change to 'g++ src/CPU.o src/Graphics.o src/octochip8.o -o octochip8 -Wall -L. -ltcod_debug -ltcodxx_debug -Wl,-rpath=. -g' to include libflags
