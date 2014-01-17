@@ -20,9 +20,16 @@ void \hyperlink{classCPU_a039ffcdbd6bd2c41bd8362b6e546b0d8}{emulate\-Cycle} ()
 \item 
 bool \hyperlink{classCPU_a68658621a98bf997bfd736c9c64f3fac}{get\-Draw\-Flag} ()
 \item 
+void \hyperlink{classCPU_a9356ef4051a2badfa3ff8a8baa8f3dc4}{set\-Draw\-Flag} (bool flag)
+\item 
 void \hyperlink{classCPU_a9bbdc09cee677e45c26214fb731e0620}{set\-Keys} ()
 \item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_a9e192437ba952fb9f7df689642b7a7aa}{get\-G\-F\-X} ()
+vector$<$ unsigned char $>$ \hyperlink{classCPU_af69c6616761fe8c264b048c96663fab2}{get\-G\-F\-X} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCPU_ac13fd4e7e628ad487d6b7c9573c51a09}{running}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -36,26 +43,32 @@ static const int \hyperlink{classCPU_a0c73376f8f7ed2cdcdc97967433e23b7}{S\-C\-R\
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_a1b598dddd7c25bc0b575c01cfb437ebe}{memory} (4096)
+void \hyperlink{classCPU_a0885351f4eab9a347c4f3ecff6cd5365}{set\-Opcode} ()
 \item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_a7b3da83191c883e3943f0b53de798152}{V} (16)
-\item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_a9fa931e3870a48ba7f222ae8bd00f346}{gfx} (\hyperlink{classCPU_a06c3d3ec8c47f48c437256e8910840a1}{C\-P\-U\-::\-S\-C\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E})
-\item 
-vector$<$ unsigned short $>$ \hyperlink{classCPU_a63adc5eba2d9820e0e88d2dfbcdcf1f9}{stack} (16)
-\item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_a6b448d2908dbafbcc40563698d26cb4c}{key} (16)
+void \hyperlink{classCPU_acb46c1c498f7bde079e70d839c66edf0}{execute\-Opcode} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 unsigned short \hyperlink{classCPU_a494cb1c2ba6ce16e3a900eaf7b1a5f63}{opcode}
 \item 
+vector$<$ unsigned char $>$ \hyperlink{classCPU_ab3122e590fe92912f56e1dc5192b9a39}{memory}
+\item 
+vector$<$ unsigned char $>$ \hyperlink{classCPU_a2fc154eb8eb17dd75c897fc69c48ab31}{V}
+\item 
 unsigned short \hyperlink{classCPU_adf1fd15edb984e81a9f7adda264aa77a}{I}
 \item 
 unsigned short \hyperlink{classCPU_a7ebf891c17b973e7aa4b1c2164dcab53}{pc}
 \item 
+vector$<$ bool $>$ \hyperlink{classCPU_af5dd2f68fb212c8c39fad8522536c8aa}{gfx}
+\item 
+vector$<$ unsigned short $>$ \hyperlink{classCPU_a89db51ac963d4badd4c9c7a701f1edea}{stack}
+\item 
 unsigned short \hyperlink{classCPU_a4d0854788d689d0f4ee604f3001b1732}{sp}
+\item 
+vector$<$ unsigned char $>$ \hyperlink{classCPU_a043e3d085471f4edd7dded7d6b5c399f}{key}
+\item 
+bool \hyperlink{classCPU_adccd58a3784f03ab908982b072139c1a}{draw\-Flag}
 \end{DoxyCompactItemize}
 
 
@@ -67,7 +80,7 @@ unsigned short \hyperlink{classCPU_a4d0854788d689d0f4ee604f3001b1732}{sp}
 {}
 \end{DoxyParamCaption}
 )}}\label{classCPU_a2fdd8153d0979ccad9ed8452897267f4}
-The height of the screen in pixels. The constructor for the class, initalise must be called after this to be used. \hypertarget{classCPU_aa32e0ed85bebabb167ace09050d20707}{\index{C\-P\-U@{C\-P\-U}!$\sim$\-C\-P\-U@{$\sim$\-C\-P\-U}}
+The constructor for the class, initalise must be called after this to be used. \hypertarget{classCPU_aa32e0ed85bebabb167ace09050d20707}{\index{C\-P\-U@{C\-P\-U}!$\sim$\-C\-P\-U@{$\sim$\-C\-P\-U}}
 \index{$\sim$\-C\-P\-U@{$\sim$\-C\-P\-U}!CPU@{C\-P\-U}}
 \subsubsection[{$\sim$\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}C\-P\-U\-::$\sim$\-C\-P\-U (
 \begin{DoxyParamCaption}
@@ -84,7 +97,14 @@ The height of the screen in pixels. The constructor for the class, initalise mus
 {}
 \end{DoxyParamCaption}
 )}}\label{classCPU_a039ffcdbd6bd2c41bd8362b6e546b0d8}
-Emulate a cycle of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
+Emulate a cycle of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_acb46c1c498f7bde079e70d839c66edf0}{\index{C\-P\-U@{C\-P\-U}!execute\-Opcode@{execute\-Opcode}}
+\index{execute\-Opcode@{execute\-Opcode}!CPU@{C\-P\-U}}
+\subsubsection[{execute\-Opcode}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::execute\-Opcode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_acb46c1c498f7bde079e70d839c66edf0}
+Executes the opcode of the current program. \hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
 \index{get\-Draw\-Flag@{get\-Draw\-Flag}!CPU@{C\-P\-U}}
 \subsubsection[{get\-Draw\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::get\-Draw\-Flag (
 \begin{DoxyParamCaption}
@@ -94,35 +114,21 @@ Emulate a cycle of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_a6865
 Gets the current draw flag determining wether or not to draw during this cpu cycle. \begin{DoxyReturn}{Returns}
 A bool of the current draw flag. True = Draw screen. False = Don't draw screen. 
 \end{DoxyReturn}
-\hypertarget{classCPU_a9e192437ba952fb9f7df689642b7a7aa}{\index{C\-P\-U@{C\-P\-U}!get\-G\-F\-X@{get\-G\-F\-X}}
+\hypertarget{classCPU_af69c6616761fe8c264b048c96663fab2}{\index{C\-P\-U@{C\-P\-U}!get\-G\-F\-X@{get\-G\-F\-X}}
 \index{get\-G\-F\-X@{get\-G\-F\-X}!CPU@{C\-P\-U}}
-\subsubsection[{get\-G\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::get\-G\-F\-X (
+\subsubsection[{get\-G\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ unsigned char $>$ C\-P\-U\-::get\-G\-F\-X (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classCPU_a9e192437ba952fb9f7df689642b7a7aa}
-\hypertarget{classCPU_a9fa931e3870a48ba7f222ae8bd00f346}{\index{C\-P\-U@{C\-P\-U}!gfx@{gfx}}
-\index{gfx@{gfx}!CPU@{C\-P\-U}}
-\subsubsection[{gfx}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::gfx (
-\begin{DoxyParamCaption}
-\item[{{\bf C\-P\-U\-::\-S\-C\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a9fa931e3870a48ba7f222ae8bd00f346}
-A vector representing the current screen \hypertarget{classCPU_ad78f88b03032587507f0e48a58866560}{\index{C\-P\-U@{C\-P\-U}!initalize@{initalize}}
+)}}\label{classCPU_af69c6616761fe8c264b048c96663fab2}
+Gets the vector object of pixels for the current screen. \hypertarget{classCPU_ad78f88b03032587507f0e48a58866560}{\index{C\-P\-U@{C\-P\-U}!initalize@{initalize}}
 \index{initalize@{initalize}!CPU@{C\-P\-U}}
 \subsubsection[{initalize}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::initalize (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classCPU_ad78f88b03032587507f0e48a58866560}
-Called after construction, sets up all registers and memory. \hypertarget{classCPU_a6b448d2908dbafbcc40563698d26cb4c}{\index{C\-P\-U@{C\-P\-U}!key@{key}}
-\index{key@{key}!CPU@{C\-P\-U}}
-\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::key (
-\begin{DoxyParamCaption}
-\item[{16}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a6b448d2908dbafbcc40563698d26cb4c}
-The pointer to the current level in the stack \hypertarget{classCPU_ad40d5c22c7df265ed603a33843fa3ee4}{\index{C\-P\-U@{C\-P\-U}!load\-Game@{load\-Game}}
+Called after construction, sets up all registers and memory. \hypertarget{classCPU_ad40d5c22c7df265ed603a33843fa3ee4}{\index{C\-P\-U@{C\-P\-U}!load\-Game@{load\-Game}}
 \index{load\-Game@{load\-Game}!CPU@{C\-P\-U}}
 \subsubsection[{load\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::load\-Game (
 \begin{DoxyParamCaption}
@@ -134,47 +140,60 @@ Load a game into the emulator.
 {\em filenamne} & The file to load. Type will probably change later. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classCPU_a1b598dddd7c25bc0b575c01cfb437ebe}{\index{C\-P\-U@{C\-P\-U}!memory@{memory}}
-\index{memory@{memory}!CPU@{C\-P\-U}}
-\subsubsection[{memory}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::memory (
+\hypertarget{classCPU_a9356ef4051a2badfa3ff8a8baa8f3dc4}{\index{C\-P\-U@{C\-P\-U}!set\-Draw\-Flag@{set\-Draw\-Flag}}
+\index{set\-Draw\-Flag@{set\-Draw\-Flag}!CPU@{C\-P\-U}}
+\subsubsection[{set\-Draw\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::set\-Draw\-Flag (
 \begin{DoxyParamCaption}
-\item[{4096}]{}
+\item[{bool}]{flag}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a1b598dddd7c25bc0b575c01cfb437ebe}
-The virtual memory -\/ 8k memory \hypertarget{classCPU_a9bbdc09cee677e45c26214fb731e0620}{\index{C\-P\-U@{C\-P\-U}!set\-Keys@{set\-Keys}}
+)}}\label{classCPU_a9356ef4051a2badfa3ff8a8baa8f3dc4}
+Sets the draw flag. Should be called at end of every cpu loop. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & The boolean value to set the draw flag. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCPU_a9bbdc09cee677e45c26214fb731e0620}{\index{C\-P\-U@{C\-P\-U}!set\-Keys@{set\-Keys}}
 \index{set\-Keys@{set\-Keys}!CPU@{C\-P\-U}}
 \subsubsection[{set\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::set\-Keys (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classCPU_a9bbdc09cee677e45c26214fb731e0620}
-Sets the keys for the current screen. \hypertarget{classCPU_a63adc5eba2d9820e0e88d2dfbcdcf1f9}{\index{C\-P\-U@{C\-P\-U}!stack@{stack}}
-\index{stack@{stack}!CPU@{C\-P\-U}}
-\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned short$>$ C\-P\-U\-::stack (
+Sets the keys for the current screen. \hypertarget{classCPU_a0885351f4eab9a347c4f3ecff6cd5365}{\index{C\-P\-U@{C\-P\-U}!set\-Opcode@{set\-Opcode}}
+\index{set\-Opcode@{set\-Opcode}!CPU@{C\-P\-U}}
+\subsubsection[{set\-Opcode}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::set\-Opcode (
 \begin{DoxyParamCaption}
-\item[{16}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a63adc5eba2d9820e0e88d2dfbcdcf1f9}
-The stack. Has 16 levels. ha pancakes \hypertarget{classCPU_a7b3da83191c883e3943f0b53de798152}{\index{C\-P\-U@{C\-P\-U}!V@{V}}
-\index{V@{V}!CPU@{C\-P\-U}}
-\subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::\-V (
-\begin{DoxyParamCaption}
-\item[{16}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a7b3da83191c883e3943f0b53de798152}
-
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a0885351f4eab9a347c4f3ecff6cd5365}
+Sets the opcode of the current program to the instruction at P\-C. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classCPU_adf1fd15edb984e81a9f7adda264aa77a}{\index{C\-P\-U@{C\-P\-U}!I@{I}}
+\hypertarget{classCPU_adccd58a3784f03ab908982b072139c1a}{\index{C\-P\-U@{C\-P\-U}!draw\-Flag@{draw\-Flag}}
+\index{draw\-Flag@{draw\-Flag}!CPU@{C\-P\-U}}
+\subsubsection[{draw\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::draw\-Flag\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_adccd58a3784f03ab908982b072139c1a}
+$<$ The current state of the key \hypertarget{classCPU_af5dd2f68fb212c8c39fad8522536c8aa}{\index{C\-P\-U@{C\-P\-U}!gfx@{gfx}}
+\index{gfx@{gfx}!CPU@{C\-P\-U}}
+\subsubsection[{gfx}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$bool$>$ C\-P\-U\-::gfx\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_af5dd2f68fb212c8c39fad8522536c8aa}
+A vector representing the current screen \hypertarget{classCPU_adf1fd15edb984e81a9f7adda264aa77a}{\index{C\-P\-U@{C\-P\-U}!I@{I}}
 \index{I@{I}!CPU@{C\-P\-U}}
 \subsubsection[{I}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::\-I\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_adf1fd15edb984e81a9f7adda264aa77a}
-$<$ The \hyperlink{classCPU}{C\-P\-U} registers. \hyperlink{classCPU}{C\-P\-U} registers\-: The Chip 8 has 15 8-\/bit general purpose registers named V0,V1 up to V\-E. The 16th register is used for the ‘carry flag’. The index register, counts down from value to 0 when in use. \hypertarget{classCPU_a494cb1c2ba6ce16e3a900eaf7b1a5f63}{\index{C\-P\-U@{C\-P\-U}!opcode@{opcode}}
+$<$ The \hyperlink{classCPU}{C\-P\-U} registers. \hyperlink{classCPU}{C\-P\-U} registers\-: The Chip 8 has 15 8-\/bit general purpose registers named V0,V1 up to V\-E. The 16th register is used for the ‘carry flag’. The index register, counts down from value to 0 when in use. \hypertarget{classCPU_a043e3d085471f4edd7dded7d6b5c399f}{\index{C\-P\-U@{C\-P\-U}!key@{key}}
+\index{key@{key}!CPU@{C\-P\-U}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::key\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a043e3d085471f4edd7dded7d6b5c399f}
+The pointer to the current level in the stack \hypertarget{classCPU_ab3122e590fe92912f56e1dc5192b9a39}{\index{C\-P\-U@{C\-P\-U}!memory@{memory}}
+\index{memory@{memory}!CPU@{C\-P\-U}}
+\subsubsection[{memory}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::memory\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_ab3122e590fe92912f56e1dc5192b9a39}
+The virtual memory -\/ 8k memory \hypertarget{classCPU_a494cb1c2ba6ce16e3a900eaf7b1a5f63}{\index{C\-P\-U@{C\-P\-U}!opcode@{opcode}}
 \index{opcode@{opcode}!CPU@{C\-P\-U}}
 \subsubsection[{opcode}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::opcode\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a494cb1c2ba6ce16e3a900eaf7b1a5f63}
 The current operation code. \hypertarget{classCPU_a7ebf891c17b973e7aa4b1c2164dcab53}{\index{C\-P\-U@{C\-P\-U}!pc@{pc}}
 \index{pc@{pc}!CPU@{C\-P\-U}}
 \subsubsection[{pc}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::pc\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a7ebf891c17b973e7aa4b1c2164dcab53}
-The program counter, counts down from value to 0 when in use. \hypertarget{classCPU_a0c73376f8f7ed2cdcdc97967433e23b7}{\index{C\-P\-U@{C\-P\-U}!S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T@{S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T}}
+The program counter, counts down from value to 0 when in use. \hypertarget{classCPU_ac13fd4e7e628ad487d6b7c9573c51a09}{\index{C\-P\-U@{C\-P\-U}!running@{running}}
+\index{running@{running}!CPU@{C\-P\-U}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::running}}\label{classCPU_ac13fd4e7e628ad487d6b7c9573c51a09}
+The height of the screen in pixels. A boolean for the running state of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_a0c73376f8f7ed2cdcdc97967433e23b7}{\index{C\-P\-U@{C\-P\-U}!S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T@{S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T}}
 \index{S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T@{S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T}!CPU@{C\-P\-U}}
 \subsubsection[{S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}const int C\-P\-U\-::\-S\-C\-R\-E\-E\-N\-\_\-\-H\-E\-I\-G\-H\-T = 32\hspace{0.3cm}{\ttfamily [static]}}}\label{classCPU_a0c73376f8f7ed2cdcdc97967433e23b7}
 The width of the screen in pixels. \hypertarget{classCPU_a06c3d3ec8c47f48c437256e8910840a1}{\index{C\-P\-U@{C\-P\-U}!S\-C\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E@{S\-C\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}}
@@ -186,6 +205,12 @@ The amount of pixels for the screen \hypertarget{classCPU_a8feada83f7887e1a418c4
 \hypertarget{classCPU_a4d0854788d689d0f4ee604f3001b1732}{\index{C\-P\-U@{C\-P\-U}!sp@{sp}}
 \index{sp@{sp}!CPU@{C\-P\-U}}
 \subsubsection[{sp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::sp\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a4d0854788d689d0f4ee604f3001b1732}
+\hypertarget{classCPU_a89db51ac963d4badd4c9c7a701f1edea}{\index{C\-P\-U@{C\-P\-U}!stack@{stack}}
+\index{stack@{stack}!CPU@{C\-P\-U}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned short$>$ C\-P\-U\-::stack\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a89db51ac963d4badd4c9c7a701f1edea}
+The stack. Has 16 levels. ha pancakes \hypertarget{classCPU_a2fc154eb8eb17dd75c897fc69c48ab31}{\index{C\-P\-U@{C\-P\-U}!V@{V}}
+\index{V@{V}!CPU@{C\-P\-U}}
+\subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a2fc154eb8eb17dd75c897fc69c48ab31}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

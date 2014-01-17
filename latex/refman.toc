@@ -9,37 +9,55 @@
 \contentsline {subsubsection}{\numberline {3.1.1.2}$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U}{6}{subsubsection.3.1.1.2}
 \contentsline {subsection}{\numberline {3.1.2}Member Function Documentation}{6}{subsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.2.1}emulate\discretionary {-}{}{}Cycle}{6}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}{6}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}{6}{subsubsection.3.1.2.3}
-\contentsline {subsubsection}{\numberline {3.1.2.4}gfx}{6}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.2}execute\discretionary {-}{}{}Opcode}{6}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}{6}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}{6}{subsubsection.3.1.2.4}
 \contentsline {subsubsection}{\numberline {3.1.2.5}initalize}{6}{subsubsection.3.1.2.5}
-\contentsline {subsubsection}{\numberline {3.1.2.6}key}{6}{subsubsection.3.1.2.6}
-\contentsline {subsubsection}{\numberline {3.1.2.7}load\discretionary {-}{}{}Game}{6}{subsubsection.3.1.2.7}
-\contentsline {subsubsection}{\numberline {3.1.2.8}memory}{6}{subsubsection.3.1.2.8}
-\contentsline {subsubsection}{\numberline {3.1.2.9}set\discretionary {-}{}{}Keys}{6}{subsubsection.3.1.2.9}
-\contentsline {subsubsection}{\numberline {3.1.2.10}stack}{7}{subsubsection.3.1.2.10}
-\contentsline {subsubsection}{\numberline {3.1.2.11}V}{7}{subsubsection.3.1.2.11}
+\contentsline {subsubsection}{\numberline {3.1.2.6}load\discretionary {-}{}{}Game}{6}{subsubsection.3.1.2.6}
+\contentsline {subsubsection}{\numberline {3.1.2.7}set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}{7}{subsubsection.3.1.2.7}
+\contentsline {subsubsection}{\numberline {3.1.2.8}set\discretionary {-}{}{}Keys}{7}{subsubsection.3.1.2.8}
+\contentsline {subsubsection}{\numberline {3.1.2.9}set\discretionary {-}{}{}Opcode}{7}{subsubsection.3.1.2.9}
 \contentsline {subsection}{\numberline {3.1.3}Member Data Documentation}{7}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}I}{7}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}opcode}{7}{subsubsection.3.1.3.2}
-\contentsline {subsubsection}{\numberline {3.1.3.3}pc}{7}{subsubsection.3.1.3.3}
-\contentsline {subsubsection}{\numberline {3.1.3.4}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}{7}{subsubsection.3.1.3.4}
-\contentsline {subsubsection}{\numberline {3.1.3.5}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}{7}{subsubsection.3.1.3.5}
-\contentsline {subsubsection}{\numberline {3.1.3.6}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{7}{subsubsection.3.1.3.6}
-\contentsline {subsubsection}{\numberline {3.1.3.7}sp}{7}{subsubsection.3.1.3.7}
-\contentsline {section}{\numberline {3.2}Graphics Class Reference}{7}{section.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.1}draw\discretionary {-}{}{}Flag}{7}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}gfx}{7}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}I}{7}{subsubsection.3.1.3.3}
+\contentsline {subsubsection}{\numberline {3.1.3.4}key}{7}{subsubsection.3.1.3.4}
+\contentsline {subsubsection}{\numberline {3.1.3.5}memory}{7}{subsubsection.3.1.3.5}
+\contentsline {subsubsection}{\numberline {3.1.3.6}opcode}{7}{subsubsection.3.1.3.6}
+\contentsline {subsubsection}{\numberline {3.1.3.7}pc}{7}{subsubsection.3.1.3.7}
+\contentsline {subsubsection}{\numberline {3.1.3.8}running}{8}{subsubsection.3.1.3.8}
+\contentsline {subsubsection}{\numberline {3.1.3.9}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}{8}{subsubsection.3.1.3.9}
+\contentsline {subsubsection}{\numberline {3.1.3.10}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}{8}{subsubsection.3.1.3.10}
+\contentsline {subsubsection}{\numberline {3.1.3.11}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{8}{subsubsection.3.1.3.11}
+\contentsline {subsubsection}{\numberline {3.1.3.12}sp}{8}{subsubsection.3.1.3.12}
+\contentsline {subsubsection}{\numberline {3.1.3.13}stack}{8}{subsubsection.3.1.3.13}
+\contentsline {subsubsection}{\numberline {3.1.3.14}V}{8}{subsubsection.3.1.3.14}
+\contentsline {section}{\numberline {3.2}Graphics Class Reference}{8}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Constructor \& Destructor Documentation}{8}{subsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Graphics}{8}{subsubsection.3.2.1.1}
 \contentsline {subsubsection}{\numberline {3.2.1.2}$\sim $\discretionary {-}{}{}Graphics}{8}{subsubsection.3.2.1.2}
 \contentsline {subsection}{\numberline {3.2.2}Member Function Documentation}{8}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}draw}{8}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}initalize}{8}{subsubsection.3.2.2.2}
-\contentsline {chapter}{\numberline {4}File Documentation}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.cpp File Reference}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.h File Reference}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}src/\discretionary {-}{}{}Graphics.cpp File Reference}{9}{section.4.3}
-\contentsline {section}{\numberline {4.4}src/\discretionary {-}{}{}Graphics.h File Reference}{9}{section.4.4}
-\contentsline {section}{\numberline {4.5}src/octochip8.cpp File Reference}{9}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Function Documentation}{10}{subsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.1.1}main}{10}{subsubsection.4.5.1.1}
-\contentsline {part}{Index}{11}{section*.10}
+\contentsline {section}{\numberline {3.3}Input Class Reference}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Constructor \& Destructor Documentation}{9}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Input}{9}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Input}{9}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}$\sim $\discretionary {-}{}{}Input}{9}{subsubsection.3.3.1.3}
+\contentsline {subsection}{\numberline {3.3.2}Member Function Documentation}{9}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}initalize}{9}{subsubsection.3.3.2.1}
+\contentsline {chapter}{\numberline {4}File Documentation}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.cpp File Reference}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.h File Reference}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}src/\discretionary {-}{}{}Graphics.cpp File Reference}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}src/\discretionary {-}{}{}Graphics.h File Reference}{11}{section.4.4}
+\contentsline {section}{\numberline {4.5}src/\discretionary {-}{}{}Input.cpp File Reference}{12}{section.4.5}
+\contentsline {section}{\numberline {4.6}src/\discretionary {-}{}{}Input.h File Reference}{12}{section.4.6}
+\contentsline {section}{\numberline {4.7}src/octochip8.cpp File Reference}{12}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Function Documentation}{12}{subsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.1.1}main}{12}{subsubsection.4.7.1.1}
+\contentsline {subsection}{\numberline {4.7.2}Variable Documentation}{12}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}cpu}{12}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}gpu}{12}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}input}{12}{subsubsection.4.7.2.3}
+\contentsline {part}{Index}{13}{section*.14}
