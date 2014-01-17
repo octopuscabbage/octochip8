@@ -29,6 +29,7 @@ int main(void) {
         if(cpu.getDrawFlag()){
             gpu.draw(cpu.getGFX());
         }
+        cpu.setDrawFlag(false);
         cpu.setKeys();
     }
 	return 0;
