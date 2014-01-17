@@ -5,6 +5,8 @@
       <df name="src">
         <in>CPU.cpp</in>
         <in>Graphics.cpp</in>
+        <in>Input.cpp</in>
+        <in>Input.h</in>
         <in>octochip8.cpp</in>
       </df>
     </df>
@@ -46,6 +48,10 @@
       <item path="src/CPU.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Graphics.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Input.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/octochip8.cpp" ex="false" tool="1" flavor2="0">
       </item>

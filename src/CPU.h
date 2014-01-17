@@ -6,7 +6,8 @@
  */
 #include <string>
 #include <vector>
-#pragma once
+#ifndef CPU_H
+#define CPU_H
 
 using std::vector;
 
@@ -15,6 +16,8 @@ public:
 	const static int SCREEN_SIZE = 64 * 32; /**< The amount of pixels for the screen */
 	const static int SCREEN_WIDTH = 64; /**The width of the screen in pixels. */
 	const static int SCREEN_HEIGHT = 32; /** The height of the screen in pixels. */
+        
+        bool running = true; /**<A boolean for the running state of the CPU */
 	
         /**
          * The constructor for the class, initalise must be called after this to be used.
@@ -72,5 +75,4 @@ private:
 			vector<unsigned char> key (16); /** < The current state of the key */
 			
 };
-
-#endif /* CPU_H_ */
+#endif
