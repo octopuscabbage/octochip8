@@ -1,0 +1,151 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+  \item {$\sim $\discretionary {-}{}{}Graphics}
+    \subitem {Graphics}, \hyperpage{8}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{5}
+    \subitem {$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+    \subitem {emulate\discretionary {-}{}{}Cycle}, \hyperpage{6}
+    \subitem {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}, 
+		\hyperpage{6}
+    \subitem {get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}, 
+		\hyperpage{6}
+    \subitem {gfx}, \hyperpage{6}
+    \subitem {I}, \hyperpage{7}
+    \subitem {initalize}, \hyperpage{6}
+    \subitem {key}, \hyperpage{6}
+    \subitem {load\discretionary {-}{}{}Game}, \hyperpage{6}
+    \subitem {memory}, \hyperpage{6}
+    \subitem {opcode}, \hyperpage{7}
+    \subitem {pc}, \hyperpage{7}
+    \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}, 
+		\hyperpage{7}
+    \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{7}
+    \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
+		\hyperpage{7}
+    \subitem {set\discretionary {-}{}{}Keys}, \hyperpage{6}
+    \subitem {sp}, \hyperpage{7}
+    \subitem {stack}, \hyperpage{6}
+    \subitem {V}, \hyperpage{7}
+
+  \indexspace
+
+  \item {draw}
+    \subitem {Graphics}, \hyperpage{8}
+
+  \indexspace
+
+  \item {emulate\discretionary {-}{}{}Cycle}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+  \item {get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+  \item {gfx}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+  \item {Graphics}, \hyperpage{7}
+    \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{8}
+    \subitem {draw}, \hyperpage{8}
+    \subitem {Graphics}, \hyperpage{8}
+    \subitem {initalize}, \hyperpage{8}
+
+  \indexspace
+
+  \item {I}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+  \item {initalize}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+    \subitem {Graphics}, \hyperpage{8}
+
+  \indexspace
+
+  \item {key}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {load\discretionary {-}{}{}Game}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {main}
+    \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{10}
+  \item {memory}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {octochip8.\discretionary {-}{}{}cpp}
+    \subitem {main}, \hyperpage{10}
+  \item {opcode}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+
+  \indexspace
+
+  \item {pc}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+
+  \indexspace
+
+  \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+  \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+  \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+  \item {set\discretionary {-}{}{}Keys}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+  \item {sp}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+  \item {src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.\discretionary {-}{}{}cpp}, 
+		\hyperpage{9}
+  \item {src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.\discretionary {-}{}{}h}, 
+		\hyperpage{9}
+  \item {src/\discretionary {-}{}{}Graphics.\discretionary {-}{}{}cpp}, 
+		\hyperpage{9}
+  \item {src/\discretionary {-}{}{}Graphics.\discretionary {-}{}{}h}, 
+		\hyperpage{9}
+  \item {src/octochip8.\discretionary {-}{}{}cpp}, \hyperpage{9}
+  \item {stack}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {V}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
+
+\end{theindex}
