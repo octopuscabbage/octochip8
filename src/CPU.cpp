@@ -49,7 +49,6 @@ void CPU::setOpcode() {
 void CPU::setDrawFlag(bool flag) {
 	drawFlag = flag;
 }
-
 void CPU::executeOpcode(){ //TODO: optimize. test
 
 	//Used for speedup so that it only has to be computed one time.

@@ -116,26 +116,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCPU.html#a9bbdc09cee677e45c26214fb731e0620">setKeys</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#af69c6616761fe8c264b048c96663fab2">getGFX</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCPU.html#a0885351f4eab9a347c4f3ecff6cd5365">setOpcode</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCPU.html#acb46c1c498f7bde079e70d839c66edf0">executeOpcode</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classCPU.html#a494cb1c2ba6ce16e3a900eaf7b1a5f63">   69</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a494cb1c2ba6ce16e3a900eaf7b1a5f63">opcode</a>; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classCPU.html#ab3122e590fe92912f56e1dc5192b9a39">   71</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#ab3122e590fe92912f56e1dc5192b9a39">memory</a>; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classCPU.html#a2fc154eb8eb17dd75c897fc69c48ab31">   73</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#a2fc154eb8eb17dd75c897fc69c48ab31">V</a>; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classCPU.html#adf1fd15edb984e81a9f7adda264aa77a">   75</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#adf1fd15edb984e81a9f7adda264aa77a">I</a>; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="classCPU.html#a7ebf891c17b973e7aa4b1c2164dcab53">   77</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a7ebf891c17b973e7aa4b1c2164dcab53">pc</a>; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classCPU.html#af5dd2f68fb212c8c39fad8522536c8aa">   79</a></span>&#160;    vector&lt;bool&gt; <a class="code" href="classCPU.html#af5dd2f68fb212c8c39fad8522536c8aa">gfx</a>; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="classCPU.html#a89db51ac963d4badd4c9c7a701f1edea">   81</a></span>&#160;    vector&lt;unsigned short&gt; <a class="code" href="classCPU.html#a89db51ac963d4badd4c9c7a701f1edea">stack</a>; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="classCPU.html#a4d0854788d689d0f4ee604f3001b1732">   82</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a4d0854788d689d0f4ee604f3001b1732">sp</a>; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="classCPU.html#a043e3d085471f4edd7dded7d6b5c399f">   84</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#a043e3d085471f4edd7dded7d6b5c399f">key</a>; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="classCPU.html#adccd58a3784f03ab908982b072139c1a">   85</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCPU.html#adccd58a3784f03ab908982b072139c1a">drawFlag</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCPU.html#a0885351f4eab9a347c4f3ecff6cd5365">setOpcode</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCPU.html#acb46c1c498f7bde079e70d839c66edf0">executeOpcode</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="classCPU.html#a494cb1c2ba6ce16e3a900eaf7b1a5f63">  105</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a494cb1c2ba6ce16e3a900eaf7b1a5f63">opcode</a>; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="classCPU.html#ab3122e590fe92912f56e1dc5192b9a39">  107</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#ab3122e590fe92912f56e1dc5192b9a39">memory</a>; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="classCPU.html#a2fc154eb8eb17dd75c897fc69c48ab31">  109</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#a2fc154eb8eb17dd75c897fc69c48ab31">V</a>; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="classCPU.html#adf1fd15edb984e81a9f7adda264aa77a">  111</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#adf1fd15edb984e81a9f7adda264aa77a">I</a>; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classCPU.html#a7ebf891c17b973e7aa4b1c2164dcab53">  113</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a7ebf891c17b973e7aa4b1c2164dcab53">pc</a>; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="classCPU.html#af5dd2f68fb212c8c39fad8522536c8aa">  115</a></span>&#160;    vector&lt;bool&gt; <a class="code" href="classCPU.html#af5dd2f68fb212c8c39fad8522536c8aa">gfx</a>; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="classCPU.html#a89db51ac963d4badd4c9c7a701f1edea">  117</a></span>&#160;    vector&lt;unsigned short&gt; <a class="code" href="classCPU.html#a89db51ac963d4badd4c9c7a701f1edea">stack</a>; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="classCPU.html#a4d0854788d689d0f4ee604f3001b1732">  118</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classCPU.html#a4d0854788d689d0f4ee604f3001b1732">sp</a>; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="classCPU.html#a043e3d085471f4edd7dded7d6b5c399f">  120</a></span>&#160;    vector&lt;unsigned char&gt; <a class="code" href="classCPU.html#a043e3d085471f4edd7dded7d6b5c399f">key</a>; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="classCPU.html#adccd58a3784f03ab908982b072139c1a">  121</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCPU.html#adccd58a3784f03ab908982b072139c1a">drawFlag</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 17 2014 02:44:31 for octochip8 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 17 2014 02:52:31 for octochip8 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

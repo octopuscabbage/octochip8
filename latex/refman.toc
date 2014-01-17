@@ -11,9 +11,9 @@
 \contentsline {subsubsection}{\numberline {3.1.2.1}emulate\discretionary {-}{}{}Cycle}{6}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}execute\discretionary {-}{}{}Opcode}{6}{subsubsection.3.1.2.2}
 \contentsline {subsubsection}{\numberline {3.1.2.3}get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}{6}{subsubsection.3.1.2.3}
-\contentsline {subsubsection}{\numberline {3.1.2.4}get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}{6}{subsubsection.3.1.2.4}
-\contentsline {subsubsection}{\numberline {3.1.2.5}initalize}{6}{subsubsection.3.1.2.5}
-\contentsline {subsubsection}{\numberline {3.1.2.6}load\discretionary {-}{}{}Game}{6}{subsubsection.3.1.2.6}
+\contentsline {subsubsection}{\numberline {3.1.2.4}get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}{7}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.5}initalize}{7}{subsubsection.3.1.2.5}
+\contentsline {subsubsection}{\numberline {3.1.2.6}load\discretionary {-}{}{}Game}{7}{subsubsection.3.1.2.6}
 \contentsline {subsubsection}{\numberline {3.1.2.7}set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}{7}{subsubsection.3.1.2.7}
 \contentsline {subsubsection}{\numberline {3.1.2.8}set\discretionary {-}{}{}Keys}{7}{subsubsection.3.1.2.8}
 \contentsline {subsubsection}{\numberline {3.1.2.9}set\discretionary {-}{}{}Opcode}{7}{subsubsection.3.1.2.9}
@@ -22,9 +22,9 @@
 \contentsline {subsubsection}{\numberline {3.1.3.2}gfx}{7}{subsubsection.3.1.3.2}
 \contentsline {subsubsection}{\numberline {3.1.3.3}I}{7}{subsubsection.3.1.3.3}
 \contentsline {subsubsection}{\numberline {3.1.3.4}key}{7}{subsubsection.3.1.3.4}
-\contentsline {subsubsection}{\numberline {3.1.3.5}memory}{7}{subsubsection.3.1.3.5}
-\contentsline {subsubsection}{\numberline {3.1.3.6}opcode}{7}{subsubsection.3.1.3.6}
-\contentsline {subsubsection}{\numberline {3.1.3.7}pc}{7}{subsubsection.3.1.3.7}
+\contentsline {subsubsection}{\numberline {3.1.3.5}memory}{8}{subsubsection.3.1.3.5}
+\contentsline {subsubsection}{\numberline {3.1.3.6}opcode}{8}{subsubsection.3.1.3.6}
+\contentsline {subsubsection}{\numberline {3.1.3.7}pc}{8}{subsubsection.3.1.3.7}
 \contentsline {subsubsection}{\numberline {3.1.3.8}running}{8}{subsubsection.3.1.3.8}
 \contentsline {subsubsection}{\numberline {3.1.3.9}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}{8}{subsubsection.3.1.3.9}
 \contentsline {subsubsection}{\numberline {3.1.3.10}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}{8}{subsubsection.3.1.3.10}
@@ -33,12 +33,12 @@
 \contentsline {subsubsection}{\numberline {3.1.3.13}stack}{8}{subsubsection.3.1.3.13}
 \contentsline {subsubsection}{\numberline {3.1.3.14}V}{8}{subsubsection.3.1.3.14}
 \contentsline {section}{\numberline {3.2}Graphics Class Reference}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Constructor \& Destructor Documentation}{8}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Graphics}{8}{subsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.1.2}$\sim $\discretionary {-}{}{}Graphics}{8}{subsubsection.3.2.1.2}
-\contentsline {subsection}{\numberline {3.2.2}Member Function Documentation}{8}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}draw}{8}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}initalize}{8}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Constructor \& Destructor Documentation}{9}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Graphics}{9}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}$\sim $\discretionary {-}{}{}Graphics}{9}{subsubsection.3.2.1.2}
+\contentsline {subsection}{\numberline {3.2.2}Member Function Documentation}{9}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}draw}{9}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}initalize}{9}{subsubsection.3.2.2.2}
 \contentsline {section}{\numberline {3.3}Input Class Reference}{9}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Constructor \& Destructor Documentation}{9}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Input}{9}{subsubsection.3.3.1.1}

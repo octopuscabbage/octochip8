@@ -4,7 +4,7 @@
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{6}
   \item {$\sim $\discretionary {-}{}{}Graphics}
-    \subitem {Graphics}, \hyperpage{8}
+    \subitem {Graphics}, \hyperpage{9}
   \item {$\sim $\discretionary {-}{}{}Input}
     \subitem {Input}, \hyperpage{9}
 
@@ -27,13 +27,13 @@
 		\hyperpage{6}
     \subitem {gfx}, \hyperpage{7}
     \subitem {I}, \hyperpage{7}
-    \subitem {initalize}, \hyperpage{6}
+    \subitem {initalize}, \hyperpage{7}
     \subitem {key}, \hyperpage{7}
-    \subitem {load\discretionary {-}{}{}Game}, \hyperpage{6}
+    \subitem {load\discretionary {-}{}{}Game}, \hyperpage{7}
     \subitem {memory}, \hyperpage{7}
-    \subitem {opcode}, \hyperpage{7}
-    \subitem {pc}, \hyperpage{7}
-    \subitem {running}, \hyperpage{7}
+    \subitem {opcode}, \hyperpage{8}
+    \subitem {pc}, \hyperpage{8}
+    \subitem {running}, \hyperpage{8}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}, 
 		\hyperpage{8}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
@@ -53,7 +53,7 @@
   \indexspace
 
   \item {draw}
-    \subitem {Graphics}, \hyperpage{8}
+    \subitem {Graphics}, \hyperpage{9}
   \item {draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{7}
@@ -81,10 +81,10 @@
   \item {gpu}
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
   \item {Graphics}, \hyperpage{8}
-    \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{8}
-    \subitem {draw}, \hyperpage{8}
-    \subitem {Graphics}, \hyperpage{8}
-    \subitem {initalize}, \hyperpage{8}
+    \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{9}
+    \subitem {draw}, \hyperpage{9}
+    \subitem {Graphics}, \hyperpage{9}
+    \subitem {initalize}, \hyperpage{9}
 
   \indexspace
 
@@ -93,8 +93,8 @@
 		\hyperpage{7}
   \item {initalize}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{6}
-    \subitem {Graphics}, \hyperpage{8}
+		\hyperpage{7}
+    \subitem {Graphics}, \hyperpage{9}
     \subitem {Input}, \hyperpage{9}
   \item {Input}, \hyperpage{9}
     \subitem {$\sim $\discretionary {-}{}{}Input}, \hyperpage{9}
@@ -113,7 +113,7 @@
 
   \item {load\discretionary {-}{}{}Game}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{6}
+		\hyperpage{7}
 
   \indexspace
 
@@ -132,19 +132,19 @@
     \subitem {main}, \hyperpage{12}
   \item {opcode}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
   \item {pc}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
   \item {running}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
