@@ -12,6 +12,12 @@ Graphics::Graphics() {
 
 }
 
+void Graphics::initalize() {
+}
+
+void Graphics::draw(std::vector<bool> screen) {
+}
+
 Graphics::~Graphics() {
 	// TODO Auto-generated destructor stub
 }

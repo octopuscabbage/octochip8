@@ -104,7 +104,43 @@ Emulate a cycle of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_acb46
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_acb46c1c498f7bde079e70d839c66edf0}
-Executes the opcode of the current program. Opcode Table\-: Opcode Explanation 0\-N\-N\-N Calls R\-C\-A 1802 program at address N\-N\-N. 00\-E0 Clears the screen. 00\-E\-E Returns from a subroutine. 1\-N\-N\-N Jumps to address N\-N\-N. 2\-N\-N\-N Calls subroutine at N\-N\-N. 3\-X\-N\-N Skips the next instruction if V\-X equals N\-N. 4\-X\-N\-N Skips the next instruction if V\-X doesn't equal N\-N. 5\-X\-Y0 Skips the next instruction if V\-X equals V\-Y. 6\-X\-N\-N Sets V\-X to N\-N. 7\-X\-N\-N Adds N\-N to V\-X. 8\-X\-Y0 Sets V\-X to the value of V\-Y. 8\-X\-Y1 Sets V\-X to V\-X or V\-Y. 8\-X\-Y2 Sets V\-X to V\-X and V\-Y. 8\-X\-Y3 Sets V\-X to V\-X xor V\-Y. 8\-X\-Y4 Adds V\-Y to V\-X. V\-F is set to 1 when there's a carry, and to 0 when there isn't. 8\-X\-Y5 V\-Y is subtracted from V\-X. V\-F is set to 0 when there's a borrow, and 1 when there isn't. 8\-X\-Y6 Shifts V\-X right by one. V\-F is set to the value of the least significant bit of V\-X before the shift.\mbox{[}2\mbox{]} 8\-X\-Y7 Sets V\-X to V\-Y minus V\-X. V\-F is set to 0 when there's a borrow, and 1 when there isn't. 8\-X\-Y\-E Shifts V\-X left by one. V\-F is set to the value of the most significant bit of V\-X before the shift.\mbox{[}2\mbox{]} 9\-X\-Y0 Skips the next instruction if V\-X doesn't equal V\-Y. A\-N\-N\-N Sets I to the address N\-N\-N. B\-N\-N\-N Jumps to the address N\-N\-N plus V0. C\-X\-N\-N Sets V\-X to a random number and N\-N. D\-X\-Y\-N Draws a sprite at coordinate (V\-X, V\-Y) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-\/coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, V\-F is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen. E\-X9\-E Skips the next instruction if the key stored in V\-X is pressed. E\-X\-A1 Skips the next instruction if the key stored in V\-X isn't pressed. F\-X07 Sets V\-X to the value of the delay timer. F\-X0\-A A key press is awaited, and then stored in V\-X. F\-X15 Sets the delay timer to V\-X. F\-X18 Sets the sound timer to V\-X. F\-X1\-E Adds V\-X to I.\mbox{[}3\mbox{]} F\-X29 Sets I to the location of the sprite for the character in V\-X. Characters 0-\/\-F (in hexadecimal) are represented by a 4x5 font. F\-X33 Stores the Binary-\/coded decimal representation of V\-X, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of V\-X, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.) F\-X55 Stores V0 to V\-X in memory starting at address I.\mbox{[}4\mbox{]} F\-X65 Fills V0 to V\-X with values from memory starting at address I.\mbox{[}4\mbox{]} \hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
+Executes the opcode of the current program. Opcode Table\-: \par
+ Opcode Explanation 0\-N\-N\-N Calls R\-C\-A 1802 program at address N\-N\-N. \par
+ 00\-E0 Clears the screen. \par
+ 00\-E\-E Returns from a subroutine. \par
+ 1\-N\-N\-N Jumps to address N\-N\-N. \par
+ 2\-N\-N\-N Calls subroutine at N\-N\-N. \par
+ 3\-X\-N\-N Skips the next instruction if V\-X equals N\-N. \par
+ 4\-X\-N\-N Skips the next instruction if V\-X doesn't equal N\-N. \par
+ 5\-X\-Y0 Skips the next instruction if V\-X equals V\-Y. \par
+ 6\-X\-N\-N Sets V\-X to N\-N. \par
+ 7\-X\-N\-N Adds N\-N to V\-X. \par
+ 8\-X\-Y0 Sets V\-X to the value of V\-Y. \par
+ 8\-X\-Y1 Sets V\-X to V\-X or V\-Y. \par
+ 8\-X\-Y2 Sets V\-X to V\-X and V\-Y. \par
+ 8\-X\-Y3 Sets V\-X to V\-X xor V\-Y. \par
+ 8\-X\-Y4 Adds V\-Y to V\-X. V\-F is set to 1 when there's a carry, and to 0 when there isn't. \par
+ 8\-X\-Y5 V\-Y is subtracted from V\-X. V\-F is set to 0 when there's a borrow, and 1 when there isn't. \par
+ 8\-X\-Y6 Shifts V\-X right by one. V\-F is set to the value of the least significant bit of V\-X before the shift.\mbox{[}2\mbox{]} \par
+ 8\-X\-Y7 Sets V\-X to V\-Y minus V\-X. V\-F is set to 0 when there's a borrow, and 1 when there isn't. \par
+ 8\-X\-Y\-E Shifts V\-X left by one. V\-F is set to the value of the most significant bit of V\-X before the shift.\mbox{[}2\mbox{]} \par
+ 9\-X\-Y0 Skips the next instruction if V\-X doesn't equal V\-Y. \par
+ A\-N\-N\-N Sets I to the address N\-N\-N. \par
+ B\-N\-N\-N Jumps to the address N\-N\-N plus V0. \par
+ C\-X\-N\-N Sets V\-X to a random number and N\-N. \par
+ D\-X\-Y\-N Draws a sprite at coordinate (V\-X, V\-Y) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-\/coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, V\-F is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen. \par
+ E\-X9\-E Skips the next instruction if the key stored in V\-X is pressed. \par
+ E\-X\-A1 Skips the next instruction if the key stored in V\-X isn't pressed. \par
+ F\-X07 Sets V\-X to the value of the delay timer.\par
+ F\-X0\-A A key press is awaited, and then stored in V\-X. \par
+ F\-X15 Sets the delay timer to V\-X. \par
+ F\-X18 Sets the sound timer to V\-X. \par
+ F\-X1\-E Adds V\-X to I.\mbox{[}3\mbox{]} \par
+ F\-X29 Sets I to the location of the sprite for the character in V\-X. Characters 0-\/\-F (in hexadecimal) are represented by a 4x5 font. \par
+ F\-X33 Stores the Binary-\/coded decimal representation of V\-X, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of V\-X, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.) \par
+ F\-X55 Stores V0 to V\-X in memory starting at address I.\mbox{[}4\mbox{]} \par
+ F\-X65 Fills V0 to V\-X with values from memory starting at address I.\mbox{[}4\mbox{]} \par
+ \hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
 \index{get\-Draw\-Flag@{get\-Draw\-Flag}!CPU@{C\-P\-U}}
 \subsubsection[{get\-Draw\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::get\-Draw\-Flag (
 \begin{DoxyParamCaption}
@@ -178,10 +214,10 @@ $<$ The current state of the key \hypertarget{classCPU_af5dd2f68fb212c8c39fad852
 A vector representing the current screen \hypertarget{classCPU_adf1fd15edb984e81a9f7adda264aa77a}{\index{C\-P\-U@{C\-P\-U}!I@{I}}
 \index{I@{I}!CPU@{C\-P\-U}}
 \subsubsection[{I}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::\-I\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_adf1fd15edb984e81a9f7adda264aa77a}
-$<$ The \hyperlink{classCPU}{C\-P\-U} registers. \hyperlink{classCPU}{C\-P\-U} registers\-: The Chip 8 has 15 8-\/bit general purpose registers named V0,V1 up to V\-E. The 16th register is used for the ‘carry flag’. The index register, counts down from value to 0 when in use. \hypertarget{classCPU_a043e3d085471f4edd7dded7d6b5c399f}{\index{C\-P\-U@{C\-P\-U}!key@{key}}
+The index register, counts down from value to 0 when in use. \hypertarget{classCPU_a043e3d085471f4edd7dded7d6b5c399f}{\index{C\-P\-U@{C\-P\-U}!key@{key}}
 \index{key@{key}!CPU@{C\-P\-U}}
 \subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::key\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a043e3d085471f4edd7dded7d6b5c399f}
-The pointer to the current level in the stack \hypertarget{classCPU_ab3122e590fe92912f56e1dc5192b9a39}{\index{C\-P\-U@{C\-P\-U}!memory@{memory}}
+\hypertarget{classCPU_ab3122e590fe92912f56e1dc5192b9a39}{\index{C\-P\-U@{C\-P\-U}!memory@{memory}}
 \index{memory@{memory}!CPU@{C\-P\-U}}
 \subsubsection[{memory}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::memory\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_ab3122e590fe92912f56e1dc5192b9a39}
 The virtual memory -\/ 8k memory \hypertarget{classCPU_a494cb1c2ba6ce16e3a900eaf7b1a5f63}{\index{C\-P\-U@{C\-P\-U}!opcode@{opcode}}
@@ -205,13 +241,13 @@ The amount of pixels for the screen \hypertarget{classCPU_a8feada83f7887e1a418c4
 \hypertarget{classCPU_a4d0854788d689d0f4ee604f3001b1732}{\index{C\-P\-U@{C\-P\-U}!sp@{sp}}
 \index{sp@{sp}!CPU@{C\-P\-U}}
 \subsubsection[{sp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short C\-P\-U\-::sp\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a4d0854788d689d0f4ee604f3001b1732}
-\hypertarget{classCPU_a89db51ac963d4badd4c9c7a701f1edea}{\index{C\-P\-U@{C\-P\-U}!stack@{stack}}
+The pointer to the current level in the stack \hypertarget{classCPU_a89db51ac963d4badd4c9c7a701f1edea}{\index{C\-P\-U@{C\-P\-U}!stack@{stack}}
 \index{stack@{stack}!CPU@{C\-P\-U}}
 \subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned short$>$ C\-P\-U\-::stack\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a89db51ac963d4badd4c9c7a701f1edea}
 The stack. Has 16 levels. ha pancakes \hypertarget{classCPU_a2fc154eb8eb17dd75c897fc69c48ab31}{\index{C\-P\-U@{C\-P\-U}!V@{V}}
 \index{V@{V}!CPU@{C\-P\-U}}
 \subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned char$>$ C\-P\-U\-::\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a2fc154eb8eb17dd75c897fc69c48ab31}
-
+The \hyperlink{classCPU}{C\-P\-U} registers. \hyperlink{classCPU}{C\-P\-U} registers\-: The Chip 8 has 15 8-\/bit general purpose registers named V0,V1 up to V\-E. The 16th register is used for the ‘carry flag’. 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

@@ -16,7 +16,7 @@ using std::vector;
 class Graphics {
 public:
 	void initalize();
-	void draw(std::vector<unsigned char> screen);
+	void draw(std::vector<bool> screen);
 	Graphics();
 	virtual ~Graphics();
 };

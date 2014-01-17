@@ -5,9 +5,13 @@
  *      Author: octopuscabbage_
  */
 #include <algorithm>
+#include <iostream>
 #include "CPU.h"
+using std::cout;
+using std::endl;
 
 CPU::CPU() {
+	drawFlag = false;
 	memory.resize(4096);
 	V.resize(16);
 	gfx.resize(CPU::SCREEN_SIZE);
@@ -39,7 +43,8 @@ bool CPU::getDrawFlag() {
 void CPU::setKeys() {
 }
 
-vector<unsigned char> CPU::getGFX() {
+vector<bool> CPU::getGFX() {
+	return gfx;
 }
 
 void CPU::setOpcode() {
@@ -51,13 +56,8 @@ void CPU::setDrawFlag(bool flag) {
 }
 void CPU::executeOpcode(){ //TODO: optimize. test
 
-	//Used for speedup so that it only has to be computed one time.
-	//TODO MAKE SURE THIS IS USEFUL
-	unsigned short first_nibble = opcode & 0xF000;
-	unsigned short first_byte = opcode & 0xFF00;
-	unsigned short last_byte = opcode & 0x00FF;
 
-	switch(first_nibble){
+	switch(opcode & 0xF000){
 		//Opcodes beggining with 0
 		case(0x000):
 			switch(opcode){
@@ -96,31 +96,38 @@ void CPU::executeOpcode(){ //TODO: optimize. test
 		//Opcode should be 0x3XNN
 		case(0x3000):
 				//TODO this looks fishy
-				(V.at(opcode & 0x0F00) == last_byte)? pc+=4 : pc+=2;
+				(V.at(get_byte(opcode & 0x0F00,1)) == get_byte(opcode,0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
 				break;
 		//Skips the next instruction if VX doesn't equal NN.
 		//Opcode should be 4XNN
 		case(0x4000):
 				//TODO not so confident in this
-				(V.at(opcode & 0x0F00) != last_byte)? pc+=4 : pc+=2;
+				(V.at(get_byte(opcode & 0x0F00,1)) != get_byte(opcode,0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
 				break;
 		//Skips the next instruction if VX equals VY.
 		//Opcode should be 5XY0
 		case(0x5000):
 				//TODO make sure this works
-				(V.at(opcode & 0x0F00) == V.at(opcode & 0x00F0))? pc+=4 : pc+=2;
+				(V.at(get_byte(opcode & 0x0F00,1) == V.at(opcode & 0x00F0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
 				break;
 		//Sets VX to NN.
 		//Opcode should be 6XNN
 		case(0x6000):
-				V.at(opcode & 0x0F00) = opcode & 0x00FF;
+				V.at(opcode & 0x0F00) = opcode & 0x00FF; //TODO: these need to be re written. 0x0X00 != 0x000X
 				break;
 		//Adds NN to VX.
 		//Opcode should be 7XNN
 		case(0x7000):
-				V.at(opcode & 0x0F00) += last_byte;
+				V.at(opcode & 0x0F00) += last_byte; //TODO: these need to be re written. 0x0X00 != 0x000X
 				break;
+		default:
+			cout << "UNKNOWN OPCODE: " << opcode << endl;
 
 	}
+
+
 }
 
+char CPU::get_byte(short number, int n) { //TODO write a unit test.
+	return (number >> (8*n)) & 0xff;
+}

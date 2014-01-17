@@ -6,7 +6,7 @@
   \item {$\sim $\discretionary {-}{}{}Graphics}
     \subitem {Graphics}, \hyperpage{9}
   \item {$\sim $\discretionary {-}{}{}Input}
-    \subitem {Input}, \hyperpage{9}
+    \subitem {Input}, \hyperpage{10}
 
   \indexspace
 
@@ -18,35 +18,35 @@
 		\hyperpage{6}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{6}
-    \subitem {draw\discretionary {-}{}{}Flag}, \hyperpage{7}
+    \subitem {draw\discretionary {-}{}{}Flag}, \hyperpage{8}
     \subitem {emulate\discretionary {-}{}{}Cycle}, \hyperpage{6}
     \subitem {execute\discretionary {-}{}{}Opcode}, \hyperpage{6}
     \subitem {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}, 
-		\hyperpage{6}
+		\hyperpage{7}
     \subitem {get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}, 
-		\hyperpage{6}
-    \subitem {gfx}, \hyperpage{7}
-    \subitem {I}, \hyperpage{7}
+		\hyperpage{7}
+    \subitem {gfx}, \hyperpage{8}
+    \subitem {I}, \hyperpage{8}
     \subitem {initalize}, \hyperpage{7}
-    \subitem {key}, \hyperpage{7}
+    \subitem {key}, \hyperpage{8}
     \subitem {load\discretionary {-}{}{}Game}, \hyperpage{7}
-    \subitem {memory}, \hyperpage{7}
+    \subitem {memory}, \hyperpage{8}
     \subitem {opcode}, \hyperpage{8}
     \subitem {pc}, \hyperpage{8}
     \subitem {running}, \hyperpage{8}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}, 
 		\hyperpage{8}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}, 
-		\hyperpage{7}
-    \subitem {set\discretionary {-}{}{}Keys}, \hyperpage{7}
-    \subitem {set\discretionary {-}{}{}Opcode}, \hyperpage{7}
-    \subitem {sp}, \hyperpage{8}
-    \subitem {stack}, \hyperpage{8}
-    \subitem {V}, \hyperpage{8}
+		\hyperpage{8}
+    \subitem {set\discretionary {-}{}{}Keys}, \hyperpage{8}
+    \subitem {set\discretionary {-}{}{}Opcode}, \hyperpage{8}
+    \subitem {sp}, \hyperpage{9}
+    \subitem {stack}, \hyperpage{9}
+    \subitem {V}, \hyperpage{9}
   \item {cpu}
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
 
@@ -56,7 +56,7 @@
     \subitem {Graphics}, \hyperpage{9}
   \item {draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
@@ -71,16 +71,16 @@
 
   \item {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{6}
+		\hyperpage{7}
   \item {get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{6}
+		\hyperpage{7}
   \item {gfx}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
   \item {gpu}
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
-  \item {Graphics}, \hyperpage{8}
+  \item {Graphics}, \hyperpage{9}
     \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{9}
     \subitem {draw}, \hyperpage{9}
     \subitem {Graphics}, \hyperpage{9}
@@ -90,16 +90,16 @@
 
   \item {I}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
   \item {initalize}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{7}
     \subitem {Graphics}, \hyperpage{9}
-    \subitem {Input}, \hyperpage{9}
-  \item {Input}, \hyperpage{9}
-    \subitem {$\sim $\discretionary {-}{}{}Input}, \hyperpage{9}
-    \subitem {initalize}, \hyperpage{9}
-    \subitem {Input}, \hyperpage{9}
+    \subitem {Input}, \hyperpage{10}
+  \item {Input}, \hyperpage{10}
+    \subitem {$\sim $\discretionary {-}{}{}Input}, \hyperpage{10}
+    \subitem {initalize}, \hyperpage{10}
+    \subitem {Input}, \hyperpage{10}
   \item {input}
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
 
@@ -107,7 +107,7 @@
 
   \item {key}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
@@ -121,7 +121,7 @@
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
   \item {memory}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
@@ -153,22 +153,22 @@
 		\hyperpage{8}
   \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
   \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
   \item {set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
   \item {set\discretionary {-}{}{}Keys}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
   \item {set\discretionary {-}{}{}Opcode}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
   \item {sp}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
   \item {src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.\discretionary {-}{}{}cpp}, 
 		\hyperpage{11}
   \item {src/\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U.\discretionary {-}{}{}h}, 
@@ -184,12 +184,12 @@
   \item {src/octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
   \item {stack}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
 
   \indexspace
 
   \item {V}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
 
 \end{theindex}

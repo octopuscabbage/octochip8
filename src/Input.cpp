@@ -13,6 +13,9 @@ Input::Input() {
 Input::Input(const Input& orig) {
 }
 
+void Input::initalize() {
+}
+
 Input::~Input() {
 }
 
