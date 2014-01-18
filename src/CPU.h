@@ -107,7 +107,13 @@ private:
 	 * @param number The short which to split
 	 * @n The byte to return, from least to most signifigant.
 	 */
-	char get_byte(short number, int n);
+	inline char get_byte(short number, int n);
+	/**
+	 * Gets the nth nibble of a short. 0 is the least signifigant nibble and 3 is the most signifigant byte.
+	 * @param number The short which to split
+ 	 * @n The byte to return, from least to most signifigant.
+	 */
+	inline char get_nibble(short number, int n);
 	unsigned short opcode; /**<The current operation code. */
 
 	vector<unsigned char> memory; /**<The virtual memory - 8k memory*/

@@ -7,14 +7,16 @@
 \indexentry{emulate\discretionary {-}{}{}Cycle@{emulate\discretionary {-}{}{}Cycle}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{6}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!execute\discretionary {-}{}{}Opcode@{execute\discretionary {-}{}{}Opcode}|hyperpage}{6}
 \indexentry{execute\discretionary {-}{}{}Opcode@{execute\discretionary {-}{}{}Opcode}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{6}
+\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!get\discretionary {-}{}{}\_\discretionary {-}{}{}byte@{get\discretionary {-}{}{}\_\discretionary {-}{}{}byte}|hyperpage}{7}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}byte@{get\discretionary {-}{}{}\_\discretionary {-}{}{}byte}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{7}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag@{get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}|hyperpage}{7}
 \indexentry{get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag@{get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{7}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X@{get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}|hyperpage}{7}
 \indexentry{get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X@{get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{7}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!initalize@{initalize}|hyperpage}{7}
 \indexentry{initalize@{initalize}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{7}
-\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!load\discretionary {-}{}{}Game@{load\discretionary {-}{}{}Game}|hyperpage}{7}
-\indexentry{load\discretionary {-}{}{}Game@{load\discretionary {-}{}{}Game}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{7}
+\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!load\discretionary {-}{}{}Game@{load\discretionary {-}{}{}Game}|hyperpage}{8}
+\indexentry{load\discretionary {-}{}{}Game@{load\discretionary {-}{}{}Game}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag@{set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}|hyperpage}{8}
 \indexentry{set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag@{set\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!set\discretionary {-}{}{}Keys@{set\discretionary {-}{}{}Keys}|hyperpage}{8}
@@ -35,10 +37,10 @@
 \indexentry{opcode@{opcode}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!pc@{pc}|hyperpage}{8}
 \indexentry{pc@{pc}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
-\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!running@{running}|hyperpage}{8}
-\indexentry{running@{running}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
-\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}|hyperpage}{8}
-\indexentry{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{8}
+\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!running@{running}|hyperpage}{9}
+\indexentry{running@{running}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{9}
+\indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}|hyperpage}{9}
+\indexentry{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{9}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}|hyperpage}{9}
 \indexentry{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{9}
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H@{S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}|hyperpage}{9}
@@ -50,14 +52,14 @@
 \indexentry{C\discretionary {-}{}{}P\discretionary {-}{}{}U@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}!V@{V}|hyperpage}{9}
 \indexentry{V@{V}!CPU@{C\discretionary {-}{}{}P\discretionary {-}{}{}U}|hyperpage}{9}
 \indexentry{Graphics@{Graphics}|hyperpage}{9}
-\indexentry{Graphics@{Graphics}!Graphics@{Graphics}|hyperpage}{9}
-\indexentry{Graphics@{Graphics}!Graphics@{Graphics}|hyperpage}{9}
-\indexentry{Graphics@{Graphics}!$\sim $\discretionary {-}{}{}Graphics@{$\sim $\discretionary {-}{}{}Graphics}|hyperpage}{9}
-\indexentry{$\sim $\discretionary {-}{}{}Graphics@{$\sim $\discretionary {-}{}{}Graphics}!Graphics@{Graphics}|hyperpage}{9}
-\indexentry{Graphics@{Graphics}!draw@{draw}|hyperpage}{9}
-\indexentry{draw@{draw}!Graphics@{Graphics}|hyperpage}{9}
-\indexentry{Graphics@{Graphics}!initalize@{initalize}|hyperpage}{9}
-\indexentry{initalize@{initalize}!Graphics@{Graphics}|hyperpage}{9}
+\indexentry{Graphics@{Graphics}!Graphics@{Graphics}|hyperpage}{10}
+\indexentry{Graphics@{Graphics}!Graphics@{Graphics}|hyperpage}{10}
+\indexentry{Graphics@{Graphics}!$\sim $\discretionary {-}{}{}Graphics@{$\sim $\discretionary {-}{}{}Graphics}|hyperpage}{10}
+\indexentry{$\sim $\discretionary {-}{}{}Graphics@{$\sim $\discretionary {-}{}{}Graphics}!Graphics@{Graphics}|hyperpage}{10}
+\indexentry{Graphics@{Graphics}!draw@{draw}|hyperpage}{10}
+\indexentry{draw@{draw}!Graphics@{Graphics}|hyperpage}{10}
+\indexentry{Graphics@{Graphics}!initalize@{initalize}|hyperpage}{10}
+\indexentry{initalize@{initalize}!Graphics@{Graphics}|hyperpage}{10}
 \indexentry{Input@{Input}|hyperpage}{10}
 \indexentry{Input@{Input}!Input@{Input}|hyperpage}{10}
 \indexentry{Input@{Input}!Input@{Input}|hyperpage}{10}

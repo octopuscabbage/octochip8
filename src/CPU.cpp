@@ -89,37 +89,39 @@ void CPU::executeOpcode(){ //TODO: optimize. test
 		//Calls subroutine at NNN.
 		//Opcode should be 0x2NNN
 		case(0x2000):
-				//TODO fill this in.
-				pc+=2;
-				break;
+				 stack[sp] = pc;
+		  	  	 ++sp;
+		  	  	 pc = opcode & 0x0FFF;
+		  	  	 break;
 		//Skips the next instruction if VX equals NN.
 		//Opcode should be 0x3XNN
 		case(0x3000):
 				//TODO this looks fishy
-				(V.at(get_byte(opcode & 0x0F00,1)) == get_byte(opcode,0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
+				(V.at(get_byte(opcode & 0x0F00,1)) == opcode & 0x00FF)? pc+=4 : pc+=2;
 				break;
 		//Skips the next instruction if VX doesn't equal NN.
 		//Opcode should be 4XNN
 		case(0x4000):
 				//TODO not so confident in this
-				(V.at(get_byte(opcode & 0x0F00,1)) != get_byte(opcode,0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
+				(V.at(get_byte(opcode & 0x0F00,1)) != opcode & 0x00FF)? pc+=4 : pc+=2;
 				break;
 		//Skips the next instruction if VX equals VY.
 		//Opcode should be 5XY0
 		case(0x5000):
 				//TODO make sure this works
-				(V.at(get_byte(opcode & 0x0F00,1) == V.at(opcode & 0x00F0))? pc+=4 : pc+=2; //TODO: these need to be re written. 0x0X00 != 0x000X
+				(V.at(get_byte(opcode & 0x0F00,1) == V.at(get_nibble(opcode,1))))? pc+=4 : pc+=2;
 				break;
 		//Sets VX to NN.
 		//Opcode should be 6XNN
 		case(0x6000):
-				V.at(opcode & 0x0F00) = opcode & 0x00FF; //TODO: these need to be re written. 0x0X00 != 0x000X
+				V.at(get_byte(opcode & 0x0F00,1)) = opcode & 0x00FF;
 				break;
 		//Adds NN to VX.
 		//Opcode should be 7XNN
 		case(0x7000):
-				V.at(opcode & 0x0F00) += last_byte; //TODO: these need to be re written. 0x0X00 != 0x000X
+				V.at(get_byte(opcode & 0x0F00,1)) += opcode & 0x00FF;
 				break;
+
 		default:
 			cout << "UNKNOWN OPCODE: " << opcode << endl;
 
@@ -130,4 +132,9 @@ void CPU::executeOpcode(){ //TODO: optimize. test
 
 char CPU::get_byte(short number, int n) { //TODO write a unit test.
 	return (number >> (8*n)) & 0xff;
+		}
+
+char CPU::get_nibble(short number, int n) { //TODO write test
+	//TODO: not very confident in this, might want to get some paper out and owrk on it.
+	return (number >> (4*n)) & 0xf;
 }

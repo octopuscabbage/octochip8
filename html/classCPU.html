@@ -112,8 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9356ef4051a2badfa3ff8a8baa8f3dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbdc09cee677e45c26214fb731e0620"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPU.html#a9bbdc09cee677e45c26214fb731e0620">setKeys</a> ()</td></tr>
 <tr class="separator:a9bbdc09cee677e45c26214fb731e0620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69c6616761fe8c264b048c96663fab2"><td class="memItemLeft" align="right" valign="top">vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPU.html#af69c6616761fe8c264b048c96663fab2">getGFX</a> ()</td></tr>
-<tr class="separator:af69c6616761fe8c264b048c96663fab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bc6d2d338b4b7cf134a547544c8327"><td class="memItemLeft" align="right" valign="top">vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPU.html#a78bc6d2d338b4b7cf134a547544c8327">getGFX</a> ()</td></tr>
+<tr class="separator:a78bc6d2d338b4b7cf134a547544c8327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,6 +135,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a0885351f4eab9a347c4f3ecff6cd5365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb46c1c498f7bde079e70d839c66edf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPU.html#acb46c1c498f7bde079e70d839c66edf0">executeOpcode</a> ()</td></tr>
 <tr class="separator:acb46c1c498f7bde079e70d839c66edf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61665d64843633ca2f182f02d425f486"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPU.html#a61665d64843633ca2f182f02d425f486">get_byte</a> (short number, int n)</td></tr>
+<tr class="separator:a61665d64843633ca2f182f02d425f486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -236,8 +238,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes the opcode of the current program. Opcode Table: <br/>
- Opcode Explanation 0NNN Calls RCA 1802 program at address NNN. <br/>
+<p>Executes the opcode of the current program. <br/>
+ Opcode Table: <br/>
+ Opcode Explanation <br/>
+ 0NNN Calls RCA 1802 program at address NNN. <br/>
  00E0 Clears the screen. <br/>
  00EE Returns from a subroutine. <br/>
  1NNN Jumps to address NNN. <br/>
@@ -276,6 +280,48 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a61665d64843633ca2f182f02d425f486"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CPU::get_byte </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the nth byte of a short. 0 is the least signifigant byte and 1 is the most signifigant byte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>The short which to split <br/>
+ The byte to return, from least to most signifigant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a68658621a98bf997bfd736c9c64f3fac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -293,12 +339,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af69c6616761fe8c264b048c96663fab2"></a>
+<a class="anchor" id="a78bc6d2d338b4b7cf134a547544c8327"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; unsigned char &gt; CPU::getGFX </td>
+          <td class="memname">vector&lt; bool &gt; CPU::getGFX </td>
           <td>(</td>
           <td class="paramname">)</td><td></td>
           <td></td>
@@ -703,7 +749,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 17 2014 03:00:01 for octochip8 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 17 2014 17:00:47 for octochip8 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

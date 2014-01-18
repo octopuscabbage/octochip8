@@ -24,7 +24,7 @@ void \hyperlink{classCPU_a9356ef4051a2badfa3ff8a8baa8f3dc4}{set\-Draw\-Flag} (bo
 \item 
 void \hyperlink{classCPU_a9bbdc09cee677e45c26214fb731e0620}{set\-Keys} ()
 \item 
-vector$<$ unsigned char $>$ \hyperlink{classCPU_af69c6616761fe8c264b048c96663fab2}{get\-G\-F\-X} ()
+vector$<$ bool $>$ \hyperlink{classCPU_a78bc6d2d338b4b7cf134a547544c8327}{get\-G\-F\-X} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -46,6 +46,8 @@ static const int \hyperlink{classCPU_a0c73376f8f7ed2cdcdc97967433e23b7}{S\-C\-R\
 void \hyperlink{classCPU_a0885351f4eab9a347c4f3ecff6cd5365}{set\-Opcode} ()
 \item 
 void \hyperlink{classCPU_acb46c1c498f7bde079e70d839c66edf0}{execute\-Opcode} ()
+\item 
+char \hyperlink{classCPU_a61665d64843633ca2f182f02d425f486}{get\-\_\-byte} (short number, int n)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -104,8 +106,10 @@ Emulate a cycle of the \hyperlink{classCPU}{C\-P\-U} \hypertarget{classCPU_acb46
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_acb46c1c498f7bde079e70d839c66edf0}
-Executes the opcode of the current program. Opcode Table\-: \par
- Opcode Explanation 0\-N\-N\-N Calls R\-C\-A 1802 program at address N\-N\-N. \par
+Executes the opcode of the current program. \par
+ Opcode Table\-: \par
+ Opcode Explanation \par
+ 0\-N\-N\-N Calls R\-C\-A 1802 program at address N\-N\-N. \par
  00\-E0 Clears the screen. \par
  00\-E\-E Returns from a subroutine. \par
  1\-N\-N\-N Jumps to address N\-N\-N. \par
@@ -140,7 +144,21 @@ Executes the opcode of the current program. Opcode Table\-: \par
  F\-X33 Stores the Binary-\/coded decimal representation of V\-X, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of V\-X, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.) \par
  F\-X55 Stores V0 to V\-X in memory starting at address I.\mbox{[}4\mbox{]} \par
  F\-X65 Fills V0 to V\-X with values from memory starting at address I.\mbox{[}4\mbox{]} \par
- \hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
+ \hypertarget{classCPU_a61665d64843633ca2f182f02d425f486}{\index{C\-P\-U@{C\-P\-U}!get\-\_\-byte@{get\-\_\-byte}}
+\index{get\-\_\-byte@{get\-\_\-byte}!CPU@{C\-P\-U}}
+\subsubsection[{get\-\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}char C\-P\-U\-::get\-\_\-byte (
+\begin{DoxyParamCaption}
+\item[{short}]{number, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCPU_a61665d64843633ca2f182f02d425f486}
+Gets the nth byte of a short. 0 is the least signifigant byte and 1 is the most signifigant byte. 
+\begin{DoxyParams}{Parameters}
+{\em number} & The short which to split \par
+ The byte to return, from least to most signifigant. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCPU_a68658621a98bf997bfd736c9c64f3fac}{\index{C\-P\-U@{C\-P\-U}!get\-Draw\-Flag@{get\-Draw\-Flag}}
 \index{get\-Draw\-Flag@{get\-Draw\-Flag}!CPU@{C\-P\-U}}
 \subsubsection[{get\-Draw\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::get\-Draw\-Flag (
 \begin{DoxyParamCaption}
@@ -150,13 +168,13 @@ Executes the opcode of the current program. Opcode Table\-: \par
 Gets the current draw flag determining wether or not to draw during this cpu cycle. \begin{DoxyReturn}{Returns}
 A bool of the current draw flag. True = Draw screen. False = Don't draw screen. 
 \end{DoxyReturn}
-\hypertarget{classCPU_af69c6616761fe8c264b048c96663fab2}{\index{C\-P\-U@{C\-P\-U}!get\-G\-F\-X@{get\-G\-F\-X}}
+\hypertarget{classCPU_a78bc6d2d338b4b7cf134a547544c8327}{\index{C\-P\-U@{C\-P\-U}!get\-G\-F\-X@{get\-G\-F\-X}}
 \index{get\-G\-F\-X@{get\-G\-F\-X}!CPU@{C\-P\-U}}
-\subsubsection[{get\-G\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ unsigned char $>$ C\-P\-U\-::get\-G\-F\-X (
+\subsubsection[{get\-G\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ bool $>$ C\-P\-U\-::get\-G\-F\-X (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classCPU_af69c6616761fe8c264b048c96663fab2}
+)}}\label{classCPU_a78bc6d2d338b4b7cf134a547544c8327}
 Gets the vector object of pixels for the current screen. \hypertarget{classCPU_ad78f88b03032587507f0e48a58866560}{\index{C\-P\-U@{C\-P\-U}!initalize@{initalize}}
 \index{initalize@{initalize}!CPU@{C\-P\-U}}
 \subsubsection[{initalize}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::initalize (

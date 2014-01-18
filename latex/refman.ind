@@ -4,7 +4,7 @@
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{6}
   \item {$\sim $\discretionary {-}{}{}Graphics}
-    \subitem {Graphics}, \hyperpage{9}
+    \subitem {Graphics}, \hyperpage{10}
   \item {$\sim $\discretionary {-}{}{}Input}
     \subitem {Input}, \hyperpage{10}
 
@@ -21,6 +21,8 @@
     \subitem {draw\discretionary {-}{}{}Flag}, \hyperpage{8}
     \subitem {emulate\discretionary {-}{}{}Cycle}, \hyperpage{6}
     \subitem {execute\discretionary {-}{}{}Opcode}, \hyperpage{6}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}byte}, 
+		\hyperpage{7}
     \subitem {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}, 
 		\hyperpage{7}
     \subitem {get\discretionary {-}{}{}G\discretionary {-}{}{}F\discretionary {-}{}{}X}, 
@@ -29,13 +31,13 @@
     \subitem {I}, \hyperpage{8}
     \subitem {initalize}, \hyperpage{7}
     \subitem {key}, \hyperpage{8}
-    \subitem {load\discretionary {-}{}{}Game}, \hyperpage{7}
+    \subitem {load\discretionary {-}{}{}Game}, \hyperpage{8}
     \subitem {memory}, \hyperpage{8}
     \subitem {opcode}, \hyperpage{8}
     \subitem {pc}, \hyperpage{8}
-    \subitem {running}, \hyperpage{8}
+    \subitem {running}, \hyperpage{9}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
 		\hyperpage{9}
     \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
@@ -53,7 +55,7 @@
   \indexspace
 
   \item {draw}
-    \subitem {Graphics}, \hyperpage{9}
+    \subitem {Graphics}, \hyperpage{10}
   \item {draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{8}
@@ -69,6 +71,9 @@
 
   \indexspace
 
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}byte}
+    \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{7}
   \item {get\discretionary {-}{}{}Draw\discretionary {-}{}{}Flag}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{7}
@@ -81,10 +86,10 @@
   \item {gpu}
     \subitem {octochip8.\discretionary {-}{}{}cpp}, \hyperpage{12}
   \item {Graphics}, \hyperpage{9}
-    \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{9}
-    \subitem {draw}, \hyperpage{9}
-    \subitem {Graphics}, \hyperpage{9}
-    \subitem {initalize}, \hyperpage{9}
+    \subitem {$\sim $\discretionary {-}{}{}Graphics}, \hyperpage{10}
+    \subitem {draw}, \hyperpage{10}
+    \subitem {Graphics}, \hyperpage{10}
+    \subitem {initalize}, \hyperpage{10}
 
   \indexspace
 
@@ -94,7 +99,7 @@
   \item {initalize}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{7}
-    \subitem {Graphics}, \hyperpage{9}
+    \subitem {Graphics}, \hyperpage{10}
     \subitem {Input}, \hyperpage{10}
   \item {Input}, \hyperpage{10}
     \subitem {$\sim $\discretionary {-}{}{}Input}, \hyperpage{10}
@@ -113,7 +118,7 @@
 
   \item {load\discretionary {-}{}{}Game}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{7}
+		\hyperpage{8}
 
   \indexspace
 
@@ -144,13 +149,13 @@
 
   \item {running}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
 
   \indexspace
 
   \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
-		\hyperpage{8}
+		\hyperpage{9}
   \item {S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
     \subitem {C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
 		\hyperpage{9}
